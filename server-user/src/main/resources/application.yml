@@ -1,40 +1,41 @@
-server:
-  port: 5000
-eureka:
-  client:
-    serviceUrl:
-        defaultZone: http://localhost:3000/eureka/ #eureka服务端提供的注册地址 参考服务端配置的这个路径
-  instance:
-    instance-id: user-1 #此实例注册到eureka服务端的唯一的实例ID
-    prefer-ip-address: true #是否显示IP地址
-    leaseRenewalIntervalInSeconds: 10 #eureka客户需要多长时间发送心跳给eureka服务器，表明它仍然活着,默认为30 秒 (与下面配置的单位都是秒)
-    leaseExpirationDurationInSeconds: 30 #Eureka服务器在接收到实例的最后一次发出的心跳后，需要等待多久才可以将此实例删除，默认为90秒
-
 spring:
   application:
     name: client-user #此实例注册到eureka服务端的name
 
-feign:
-  hystrix:
-    enabled: true
-
-hystrix:
-  command:
-    default:
-      execution:
-        isolation:
-          thread:
-            timeoutInMilliseconds: 20000  #默认超时时间
-      circuitBreaker:
-        requestVolumeThreshold: 20
-        sleepWindowInMilliseconds : 5000
-
-management:
-  server:
-    port: 5008  #自定义actuator请求接口，不配置默认就是服务端口
-  endpoints:
-    web:
-      exposure:
-        include: "*"
-    health:
-      show-details: always
+#server:
+#  port: 5000
+#eureka:
+#  client:
+#    serviceUrl:
+#        defaultZone: http://localhost:3000/eureka/ #eureka服务端提供的注册地址 参考服务端配置的这个路径
+#  instance:
+#    instance-id: user-1 #此实例注册到eureka服务端的唯一的实例ID
+#    prefer-ip-address: true #是否显示IP地址
+#    leaseRenewalIntervalInSeconds: 10 #eureka客户需要多长时间发送心跳给eureka服务器，表明它仍然活着,默认为30 秒 (与下面配置的单位都是秒)
+#    leaseExpirationDurationInSeconds: 30 #Eureka服务器在接收到实例的最后一次发出的心跳后，需要等待多久才可以将此实例删除，默认为90秒
+#
+#
+#feign:
+#  hystrix:
+#    enabled: true
+#
+#hystrix:
+#  command:
+#    default:
+#      execution:
+#        isolation:
+#          thread:
+#            timeoutInMilliseconds: 20000  #默认超时时间
+#      circuitBreaker:
+#        requestVolumeThreshold: 20
+#        sleepWindowInMilliseconds : 5000
+#
+#management:
+#  server:
+#    port: 5008  #自定义actuator请求接口，不配置默认就是服务端口
+#  endpoints:
+#    web:
+#      exposure:
+#        include: "*"
+#    health:
+#      show-details: always

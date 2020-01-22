@@ -70,6 +70,8 @@
         <module>server-zuul9002</module>
         <module>hystrix-dashboard</module>
         <module>test-config-client</module>
+        <module>server-config</module>
+        <module>server-config2</module>
     </modules>
 
 </project>
