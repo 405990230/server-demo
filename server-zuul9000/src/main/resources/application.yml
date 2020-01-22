@@ -1,0 +1,46 @@
+server:
+  port: 9000
+eureka:
+  client:
+    serviceUrl:
+        defaultZone: http://127.0.0.1:3000/eureka/  #eureka服务端提供的注册地址 参考服务端配置的这个路径
+  instance:
+    instance-id: zuul-0 #此实例注册到eureka服务端的唯一的实例ID
+    prefer-ip-address: true #是否显示IP地址
+    leaseRenewalIntervalInSeconds: 10
+    leaseExpirationDurationInSeconds: 30
+
+
+spring:
+  application:
+    name: zuul #此实例注册到eureka服务端的name
+
+ribbon:
+  eureka:
+    enabled: false
+
+feign:
+  hystrix:
+    enabled: true
+
+zuul:
+  prefix: /api
+  ignored-services: "*"
+  #  stripPrefix: false
+  routes:
+    power:
+      serviceId: zuul-server
+      path: /zuul/**
+#zuul:
+#  prefix: /api
+#  strip-prefix: true
+#  ignored-services: "*"
+#  routes:
+#    power:
+#      serviceId: server-power
+#      path: /power/**
+#      #url: http://localhost:6001/,http://localhost:6002/
+#    user:
+#      serviceId: client-user
+#      path: /user/**
+#      url: http://localhost:5000/

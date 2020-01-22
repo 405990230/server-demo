@@ -1,0 +1,12 @@
+server:
+  port: 5009
+spring:
+  application:
+    name: test-config-client-git
+
+eureka:
+  instance:
+    instance-id: user-1 #此实例注册到eureka服务端的唯一的实例ID
+    prefer-ip-address: true #是否显示IP地址
+    leaseRenewalIntervalInSeconds: 10
+    leaseExpirationDurationInSeconds: 30
