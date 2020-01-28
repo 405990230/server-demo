@@ -1,5 +1,5 @@
 server:
-  port: 5088
+  port: 8080
 
 eureka:
   client:
@@ -19,10 +19,14 @@ spring:
       server:
         git:
           uri: https://github.com/405990230/server-demo.git #配置文件在github上的地址
+          username: 405990230  #连接git的用户名。
+          password: 07115076813Yd #连接git的用户名密码。
           #Configserver会在 Git仓库根目录、 config-file子目录，以及所有以 bar开始的子目录中查找配置文件。
           search-paths: config-file,bar*
           #启动时就clone仓库到本地，默认是在配置被首次请求时，config server才会clone git仓库
           clone-on-start: true
+          #配置为true表示如果本地副本是脏的，将使Spring Cloud Config Server强制从远程存储库拉取配置。
+          force-pull: true
 
 
 

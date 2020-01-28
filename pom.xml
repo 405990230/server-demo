@@ -72,6 +72,7 @@
         <module>test-config-client</module>
         <module>server-config</module>
         <module>server-config2</module>
+        <module>zipkin-server</module>
     </modules>
 
 </project>
