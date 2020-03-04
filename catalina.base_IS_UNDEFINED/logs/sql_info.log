@@ -1,0 +1,2 @@
+20200224:23:41:26.632 [main] INFO   Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@41fecb8b: startup date [Mon Feb 24 23:41:26 CST 2020]; root of context hierarchy
+20200224:23:41:26.835 [main] INFO   Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@41fecb8b: startup date [Mon Feb 24 23:41:26 CST 2020]; root of context hierarchy

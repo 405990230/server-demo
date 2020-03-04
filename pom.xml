@@ -76,6 +76,8 @@
         <module>mq-test</module>
         <module>mq-send</module>
         <module>mq-receive</module>
+        <module>spring-lifecycle</module>
+        <module>java-basic</module>
     </modules>
 
 </project>

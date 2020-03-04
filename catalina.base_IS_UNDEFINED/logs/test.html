@@ -1,0 +1,745 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>Logback Log Messages</title>
+<style  type="text/css">
+table { margin-left: 2em; margin-right: 2em; border-left: 2px solid #AAA; }
+TR.even { background: #FFFFFF; }
+TR.odd { background: #EAEAEA; }
+TR.warn TD.Level, TR.error TD.Level, TR.fatal TD.Level {font-weight: bold; color: #FF4040 }
+TD { padding-right: 1ex; padding-left: 1ex; border-right: 2px solid #AAA; }
+TD.Time, TD.Date { text-align: right; font-family: courier, monospace; font-size: smaller; }
+TD.Thread { text-align: left; }
+TD.Level { text-align: right; }
+TD.Logger { text-align: left; }
+TR.header { background: #596ED5; color: #FFF; font-weight: bold; font-size: larger; }
+TD.Exception { background: #A2AEE8; font-family: courier, monospace;}
+</style>
+
+  </head>
+<body>
+<hr/>
+<p>Log session start time Mon Feb 24 23:41:26 CST 2020</p><p></p>
+
+<table cellspacing="0">
+<tr class="header">
+<td class="Date">Date</td>
+<td class="Thread">Thread</td>
+<td class="Level">Level</td>
+<td class="FileOfCaller">FileOfCaller</td>
+<td class="MethodOfCaller">MethodOfCaller</td>
+<td class="LineOfCaller">LineOfCaller</td>
+<td class="Message">Message</td>
+</tr>
+
+
+<tr class="debug even">
+<td class="Date">20200224:23:41:26.578</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">MutablePropertySources.java</td>
+<td class="MethodOfCaller">addLast</td>
+<td class="LineOfCaller">110</td>
+<td class="Message">Adding PropertySource &#39;systemProperties&#39; with lowest search precedence</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">20200224:23:41:26.582</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">MutablePropertySources.java</td>
+<td class="MethodOfCaller">addLast</td>
+<td class="LineOfCaller">110</td>
+<td class="Message">Adding PropertySource &#39;systemEnvironment&#39; with lowest search precedence</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">20200224:23:41:26.583</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">AbstractEnvironment.java</td>
+<td class="MethodOfCaller">&lt;init&gt;</td>
+<td class="LineOfCaller">126</td>
+<td class="Message">Initialized StandardEnvironment with PropertySources [MapPropertySource@1864387098 {name=&#39;systemProperties&#39;, properties={sun.desktop=windows, awt.toolkit=sun.awt.windows.WToolkit, java.specification.version=11, sun.cpu.isalist=amd64, sun.jnu.encoding=GBK, java.class.path=D:\git-code\server-demo\spring-lifecycle\target\classes;C:\Users\40599\.m2\repository\org\springframework\boot\spring-boot-starter-web\2.0.5.RELEASE\spring-boot-starter-web-2.0.5.RELEASE.jar;C:\Users\40599\.m2\repository\org\springframework\boot\spring-boot-starter\2.0.5.RELEASE\spring-boot-starter-2.0.5.RELEASE.jar;C:\Users\40599\.m2\repository\org\springframework\boot\spring-boot\2.0.5.RELEASE\spring-boot-2.0.5.RELEASE.jar;C:\Users\40599\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\2.0.5.RELEASE\spring-boot-autoconfigure-2.0.5.RELEASE.jar;C:\Users\40599\.m2\repository\org\springframework\boot\spring-boot-starter-logging\2.0.5.RELEASE\spring-boot-starter-logging-2.0.5.RELEASE.jar;C:\Users\40599\.m2\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;C:\Users\40599\.m2\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;C:\Users\40599\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.10.0\log4j-to-slf4j-2.10.0.jar;C:\Users\40599\.m2\repository\org\apache\logging\log4j\log4j-api\2.10.0\log4j-api-2.10.0.jar;C:\Users\40599\.m2\repository\org\slf4j\jul-to-slf4j\1.7.25\jul-to-slf4j-1.7.25.jar;C:\Users\40599\.m2\repository\javax\annotation\javax.annotation-api\1.3.2\javax.annotation-api-1.3.2.jar;C:\Users\40599\.m2\repository\org\yaml\snakeyaml\1.19\snakeyaml-1.19.jar;C:\Users\40599\.m2\repository\org\springframework\boot\spring-boot-starter-json\2.0.5.RELEASE\spring-boot-starter-json-2.0.5.RELEASE.jar;C:\Users\40599\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.9.6\jackson-databind-2.9.6.jar;C:\Users\40599\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.9.0\jackson-annotations-2.9.0.jar;C:\Users\40599\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.9.6\jackson-core-2.9.6.jar;C:\Users\40599\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.9.6\jackson-datatype-jdk8-2.9.6.jar;C:\Users\40599\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.9.6\jackson-datatype-jsr310-2.9.6.jar;C:\Users\40599\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.9.6\jackson-module-parameter-names-2.9.6.jar;C:\Users\40599\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\2.0.5.RELEASE\spring-boot-starter-tomcat-2.0.5.RELEASE.jar;C:\Users\40599\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\8.5.34\tomcat-embed-core-8.5.34.jar;C:\Users\40599\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\8.5.34\tomcat-embed-el-8.5.34.jar;C:\Users\40599\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\8.5.34\tomcat-embed-websocket-8.5.34.jar;C:\Users\40599\.m2\repository\org\hibernate\validator\hibernate-validator\6.0.12.Final\hibernate-validator-6.0.12.Final.jar;C:\Users\40599\.m2\repository\javax\validation\validation-api\2.0.1.Final\validation-api-2.0.1.Final.jar;C:\Users\40599\.m2\repository\org\jboss\logging\jboss-logging\3.3.2.Final\jboss-logging-3.3.2.Final.jar;C:\Users\40599\.m2\repository\com\fasterxml\classmate\1.3.4\classmate-1.3.4.jar;C:\Users\40599\.m2\repository\org\springframework\spring-web\5.0.9.RELEASE\spring-web-5.0.9.RELEASE.jar;C:\Users\40599\.m2\repository\org\springframework\spring-beans\5.0.9.RELEASE\spring-beans-5.0.9.RELEASE.jar;C:\Users\40599\.m2\repository\org\springframework\spring-webmvc\5.0.9.RELEASE\spring-webmvc-5.0.9.RELEASE.jar;C:\Users\40599\.m2\repository\org\springframework\spring-aop\5.0.9.RELEASE\spring-aop-5.0.9.RELEASE.jar;C:\Users\40599\.m2\repository\org\springframework\spring-context\5.0.9.RELEASE\spring-context-5.0.9.RELEASE.jar;C:\Users\40599\.m2\repository\org\springframework\spring-expression\5.0.9.RELEASE\spring-expression-5.0.9.RELEASE.jar;C:\Users\40599\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\40599\.m2\repository\org\springframework\spring-core\5.0.9.RELEASE\spring-core-5.0.9.RELEASE.jar;C:\Users\40599\.m2\repository\org\springframework\spring-jcl\5.0.9.RELEASE\spring-jcl-5.0.9.RELEASE.jar;C:\Users\40599\yd\JetBrains\IntelliJ IDEA 2019.3.3\lib\idea_rt.jar, java.vm.vendor=JetBrains s.r.o, sun.arch.data.model=64, user.variant=, java.vendor.url=https://www.jetbrains.com/, user.timezone=Asia/Shanghai, os.name=Windows 10, java.vm.specification.version=11, sun.java.launcher=SUN_STANDARD, user.country=CN, sun.boot.library.path=C:\Users\40599\yd\JetBrains\IntelliJ IDEA 2019.3.3\jbr\bin, sun.java.command=com.spring.lifecycle.callbacks.Test, jdk.debug=release, sun.cpu.endian=little, user.home=C:\Users\40599, user.language=zh, java.specification.vendor=Oracle Corporation, java.version.date=2019-10-15, java.home=C:\Users\40599\yd\JetBrains\IntelliJ IDEA 2019.3.3\jbr, file.separator=\, java.vm.compressedOopsMode=Zero based, line.separator=
+, java.specification.name=Java Platform API Specification, java.vm.specification.vendor=Oracle Corporation, intellij.debug.agent=true, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, user.script=, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.runtime.version=11.0.5+10-b520.38, user.name=40599, path.separator=;, os.version=10.0, java.runtime.name=OpenJDK Runtime Environment, file.encoding=UTF-8, java.vm.name=OpenJDK 64-Bit Server VM, java.vendor.url.bug=https://youtrack.jetbrains.com, java.io.tmpdir=C:\Users\40599\AppData\Local\Temp\, java.version=11.0.5, jboss.modules.system.pkgs=com.intellij.rt, user.dir=D:\git-code\server-demo, os.arch=amd64, java.vm.specification.name=Java Virtual Machine Specification, java.awt.printerjob=sun.awt.windows.WPrinterJob, sun.os.patch.level=, java.library.path=C:\Users\40599\yd\JetBrains\IntelliJ IDEA 2019.3.3\jbr\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;&quot;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;&quot;;&quot;C:\Program Files\Java\jdk1.8.0_201\bin;C:\Program Files\Java\jdk1.8.0_201\jre\bin&quot;;D:\softwire\apache-maven-3.6.3\bin;C:\Users\40599\yd\Git\cmd;C:\Users\40599\AppData\Local\Microsoft\WindowsApps;;C:\Users\40599\yd\JetBrains\IntelliJ IDEA 2019.3.3\bin;;., java.vendor=JetBrains s.r.o, java.vm.info=mixed mode, sharing, java.vm.version=11.0.5+10-b520.38, sun.io.unicode.encoding=UnicodeLittle, java.class.version=55.0}}, SystemEnvironmentPropertySource@770010802 {name=&#39;systemEnvironment&#39;, properties={USERDOMAIN_ROAMINGPROFILE=DESKTOP-0JIPQ71, LOCALAPPDATA=C:\Users\40599\AppData\Local, PROCESSOR_LEVEL=6, IntelliJ IDEA=C:\Users\40599\yd\JetBrains\IntelliJ IDEA 2019.3.3\bin;, USERDOMAIN=DESKTOP-0JIPQ71, FPS_BROWSER_APP_PROFILE_STRING=Internet Explorer, LOGONSERVER=\\DESKTOP-0JIPQ71, JAVA_HOME=C:\Program Files\Java\jdk1.8.0_201, SESSIONNAME=Console, ALLUSERSPROFILE=C:\ProgramData, PROCESSOR_ARCHITECTURE=AMD64, PSModulePath=C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules, SystemDrive=C:, MAVEN_HOME=D:\softwire\apache-maven-3.6.3, OneDrive=C:\Users\40599\OneDrive, APPDATA=C:\Users\40599\AppData\Roaming, USERNAME=40599, ProgramFiles(x86)=C:\Program Files (x86), CommonProgramFiles=C:\Program Files\Common Files, Path=C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;&quot;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;&quot;;&quot;C:\Program Files\Java\jdk1.8.0_201\bin;C:\Program Files\Java\jdk1.8.0_201\jre\bin&quot;;D:\softwire\apache-maven-3.6.3\bin;C:\Users\40599\yd\Git\cmd;C:\Users\40599\AppData\Local\Microsoft\WindowsApps;;C:\Users\40599\yd\JetBrains\IntelliJ IDEA 2019.3.3\bin;, FPS_BROWSER_USER_PROFILE_STRING=Default, JETBRAINS_LICENSE_SERVER=http://fls.jetbrains-agent.com, PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC, DriverData=C:\Windows\System32\Drivers\DriverData, OS=Windows_NT, OneDriveConsumer=C:\Users\40599\OneDrive, COMPUTERNAME=DESKTOP-0JIPQ71, PROCESSOR_REVISION=8e0c, CLASSPATH=.;C:\Program Files\Java\jdk1.8.0_201\lib;C:\Program Files\Java\jdk1.8.0_201\lib\tools.jar, CommonProgramW6432=C:\Program Files\Common Files, ComSpec=C:\Windows\system32\cmd.exe, ProgramData=C:\ProgramData, ProgramW6432=C:\Program Files, HOMEPATH=\Users\40599, SystemRoot=C:\Windows, TEMP=C:\Users\40599\AppData\Local\Temp, HOMEDRIVE=C:, PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 142 Stepping 12, GenuineIntel, USERPROFILE=C:\Users\40599, TMP=C:\Users\40599\AppData\Local\Temp, CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files, ProgramFiles=C:\Program Files, PUBLIC=C:\Users\Public, NUMBER_OF_PROCESSORS=8, windir=C:\Windows, =::=::\, IDEA_INITIAL_DIRECTORY=C:\Users\40599\Desktop}}]</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">20200224:23:41:26.602</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">ClassPathScanningCandidateComponentProvider.java</td>
+<td class="MethodOfCaller">registerDefaultFilters</td>
+<td class="LineOfCaller">212</td>
+<td class="Message">JSR-250 &#39;javax.annotation.ManagedBean&#39; found and supported for component scanning</td>
+</tr>
+
+<tr class="info even">
+<td class="Date">20200224:23:41:26.632</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="FileOfCaller">AbstractApplicationContext.java</td>
+<td class="MethodOfCaller">prepareRefresh</td>
+<td class="LineOfCaller">590</td>
+<td class="Message">Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@41fecb8b: startup date [Mon Feb 24 23:41:26 CST 2020]; root of context hierarchy</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">20200224:23:41:26.633</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">AbstractApplicationContext.java</td>
+<td class="MethodOfCaller">obtainFreshBeanFactory</td>
+<td class="LineOfCaller">624</td>
+<td class="Message">Bean factory for org.springframework.context.annotation.AnnotationConfigApplicationContext@41fecb8b: org.springframework.beans.factory.support.DefaultListableBeanFactory@27912e3: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,appConfig]; root of factory hierarchy</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">20200224:23:41:26.644</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">DefaultSingletonBeanRegistry.java</td>
+<td class="MethodOfCaller">getSingleton</td>
+<td class="LineOfCaller">213</td>
+<td class="Message">Creating shared instance of singleton bean &#39;org.springframework.context.annotation.internalConfigurationAnnotationProcessor&#39;</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">20200224:23:41:26.645</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">AbstractAutowireCapableBeanFactory.java</td>
+<td class="MethodOfCaller">createBean</td>
+<td class="LineOfCaller">460</td>
+<td class="Message">Creating instance of bean &#39;org.springframework.context.annotation.internalConfigurationAnnotationProcessor&#39;</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">20200224:23:41:26.658</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">AbstractAutowireCapableBeanFactory.java</td>
+<td class="MethodOfCaller">doCreateBean</td>
+<td class="LineOfCaller">563</td>
+<td class="Message">Eagerly caching bean &#39;org.springframework.context.annotation.internalConfigurationAnnotationProcessor&#39; to allow for resolving potential circular references</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">20200224:23:41:26.660</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">AbstractAutowireCapableBeanFactory.java</td>
+<td class="MethodOfCaller">createBean</td>
+<td class="LineOfCaller">497</td>
+<td class="Message">Finished creating instance of bean &#39;org.springframework.context.annotation.internalConfigurationAnnotationProcessor&#39;</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">20200224:23:41:26.675</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">ClassPathScanningCandidateComponentProvider.java</td>
+<td class="MethodOfCaller">registerDefaultFilters</td>
+<td class="LineOfCaller">212</td>
+<td class="Message">JSR-250 &#39;javax.annotation.ManagedBean&#39; found and supported for component scanning</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">20200224:23:41:26.678</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">PathMatchingResourcePatternResolver.java</td>
+<td class="MethodOfCaller">findAllClassPathResources</td>
+<td class="LineOfCaller">321</td>
+<td class="Message">Resolved classpath location [com/spring/lifecycle/] to resources [URL [file:/D:/git-code/server-demo/spring-lifecycle/target/classes/com/spring/lifecycle/]]</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">20200224:23:41:26.679</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">PathMatchingResourcePatternResolver.java</td>
+<td class="MethodOfCaller">doFindMatchingFileSystemResources</td>
+<td class="LineOfCaller">721</td>
+<td class="Message">Looking for matching resources in directory tree [D:\git-code\server-demo\spring-lifecycle\target\classes\com\spring\lifecycle]</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">20200224:23:41:26.679</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">PathMatchingResourcePatternResolver.java</td>
+<td class="MethodOfCaller">doRetrieveMatchingFiles</td>
+<td class="LineOfCaller">783</td>
+<td class="Message">Searching directory [D:\git-code\server-demo\spring-lifecycle\target\classes\com\spring\lifecycle] for files matching pattern [D:/git-code/server-demo/spring-lifecycle/target/classes/com/spring/lifecycle/**/*.class]</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">20200224:23:41:26.680</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">PathMatchingResourcePatternResolver.java</td>
+<td class="MethodOfCaller">doRetrieveMatchingFiles</td>
+<td class="LineOfCaller">783</td>
+<td class="Message">Searching directory [D:\git-code\server-demo\spring-lifecycle\target\classes\com\spring\lifecycle\callbacks] for files matching pattern [D:/git-code/server-demo/spring-lifecycle/target/classes/com/spring/lifecycle/**/*.class]</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">20200224:23:41:26.682</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">PathMatchingResourcePatternResolver.java</td>
+<td class="MethodOfCaller">findPathMatchingResources</td>
+<td class="LineOfCaller">514</td>
+<td class="Message">Resolved location pattern [classpath*:com/spring/lifecycle/**/*.class] to resources [file [D:\git-code\server-demo\spring-lifecycle\target\classes\com\spring\lifecycle\callbacks\A.class], file [D:\git-code\server-demo\spring-lifecycle\target\classes\com\spring\lifecycle\callbacks\AppConfig.class], file [D:\git-code\server-demo\spring-lifecycle\target\classes\com\spring\lifecycle\callbacks\Test.class]]</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">20200224:23:41:26.693</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">ClassPathScanningCandidateComponentProvider.java</td>
+<td class="MethodOfCaller">scanCandidateComponents</td>
+<td class="LineOfCaller">437</td>
+<td class="Message">Identified candidate component class: file [D:\git-code\server-demo\spring-lifecycle\target\classes\com\spring\lifecycle\callbacks\A.class]</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">20200224:23:41:26.712</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">DefaultSingletonBeanRegistry.java</td>
+<td class="MethodOfCaller">getSingleton</td>
+<td class="LineOfCaller">213</td>
+<td class="Message">Creating shared instance of singleton bean &#39;org.springframework.context.annotation.internalAutowiredAnnotationProcessor&#39;</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">20200224:23:41:26.713</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">AbstractAutowireCapableBeanFactory.java</td>
+<td class="MethodOfCaller">createBean</td>
+<td class="LineOfCaller">460</td>
+<td class="Message">Creating instance of bean &#39;org.springframework.context.annotation.internalAutowiredAnnotationProcessor&#39;</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">20200224:23:41:26.713</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">AbstractAutowireCapableBeanFactory.java</td>
+<td class="MethodOfCaller">doCreateBean</td>
+<td class="LineOfCaller">563</td>
+<td class="Message">Eagerly caching bean &#39;org.springframework.context.annotation.internalAutowiredAnnotationProcessor&#39; to allow for resolving potential circular references</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">20200224:23:41:26.764</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">AbstractAutowireCapableBeanFactory.java</td>
+<td class="MethodOfCaller">createBean</td>
+<td class="LineOfCaller">497</td>
+<td class="Message">Finished creating instance of bean &#39;org.springframework.context.annotation.internalAutowiredAnnotationProcessor&#39;</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">20200224:23:41:26.764</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">DefaultSingletonBeanRegistry.java</td>
+<td class="MethodOfCaller">getSingleton</td>
+<td class="LineOfCaller">213</td>
+<td class="Message">Creating shared instance of singleton bean &#39;org.springframework.context.annotation.internalRequiredAnnotationProcessor&#39;</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">20200224:23:41:26.765</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">AbstractAutowireCapableBeanFactory.java</td>
+<td class="MethodOfCaller">createBean</td>
+<td class="LineOfCaller">460</td>
+<td class="Message">Creating instance of bean &#39;org.springframework.context.annotation.internalRequiredAnnotationProcessor&#39;</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">20200224:23:41:26.765</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">AbstractAutowireCapableBeanFactory.java</td>
+<td class="MethodOfCaller">doCreateBean</td>
+<td class="LineOfCaller">563</td>
+<td class="Message">Eagerly caching bean &#39;org.springframework.context.annotation.internalRequiredAnnotationProcessor&#39; to allow for resolving potential circular references</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">20200224:23:41:26.766</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">AbstractAutowireCapableBeanFactory.java</td>
+<td class="MethodOfCaller">createBean</td>
+<td class="LineOfCaller">497</td>
+<td class="Message">Finished creating instance of bean &#39;org.springframework.context.annotation.internalRequiredAnnotationProcessor&#39;</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">20200224:23:41:26.767</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">DefaultSingletonBeanRegistry.java</td>
+<td class="MethodOfCaller">getSingleton</td>
+<td class="LineOfCaller">213</td>
+<td class="Message">Creating shared instance of singleton bean &#39;org.springframework.context.annotation.internalCommonAnnotationProcessor&#39;</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">20200224:23:41:26.767</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">AbstractAutowireCapableBeanFactory.java</td>
+<td class="MethodOfCaller">createBean</td>
+<td class="LineOfCaller">460</td>
+<td class="Message">Creating instance of bean &#39;org.springframework.context.annotation.internalCommonAnnotationProcessor&#39;</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">20200224:23:41:26.769</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">AbstractAutowireCapableBeanFactory.java</td>
+<td class="MethodOfCaller">doCreateBean</td>
+<td class="LineOfCaller">563</td>
+<td class="Message">Eagerly caching bean &#39;org.springframework.context.annotation.internalCommonAnnotationProcessor&#39; to allow for resolving potential circular references</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">20200224:23:41:26.776</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">AbstractAutowireCapableBeanFactory.java</td>
+<td class="MethodOfCaller">createBean</td>
+<td class="LineOfCaller">497</td>
+<td class="Message">Finished creating instance of bean &#39;org.springframework.context.annotation.internalCommonAnnotationProcessor&#39;</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">20200224:23:41:26.778</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">AbstractApplicationContext.java</td>
+<td class="MethodOfCaller">initMessageSource</td>
+<td class="LineOfCaller">741</td>
+<td class="Message">Unable to locate MessageSource with name &#39;messageSource&#39;: using default [org.springframework.context.support.DelegatingMessageSource@4fad9bb2]</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">20200224:23:41:26.779</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">AbstractApplicationContext.java</td>
+<td class="MethodOfCaller">initApplicationEventMulticaster</td>
+<td class="LineOfCaller">765</td>
+<td class="Message">Unable to locate ApplicationEventMulticaster with name &#39;applicationEventMulticaster&#39;: using default [org.springframework.context.event.SimpleApplicationEventMulticaster@4f1bfe23]</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">20200224:23:41:26.780</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">DefaultListableBeanFactory.java</td>
+<td class="MethodOfCaller">preInstantiateSingletons</td>
+<td class="LineOfCaller">728</td>
+<td class="Message">Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@27912e3: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,appConfig,a]; root of factory hierarchy</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">20200224:23:41:26.780</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">AbstractBeanFactory.java</td>
+<td class="MethodOfCaller">doGetBean</td>
+<td class="LineOfCaller">254</td>
+<td class="Message">Returning cached instance of singleton bean &#39;org.springframework.context.annotation.internalConfigurationAnnotationProcessor&#39;</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">20200224:23:41:26.780</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">AbstractBeanFactory.java</td>
+<td class="MethodOfCaller">doGetBean</td>
+<td class="LineOfCaller">254</td>
+<td class="Message">Returning cached instance of singleton bean &#39;org.springframework.context.annotation.internalAutowiredAnnotationProcessor&#39;</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">20200224:23:41:26.780</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">AbstractBeanFactory.java</td>
+<td class="MethodOfCaller">doGetBean</td>
+<td class="LineOfCaller">254</td>
+<td class="Message">Returning cached instance of singleton bean &#39;org.springframework.context.annotation.internalRequiredAnnotationProcessor&#39;</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">20200224:23:41:26.780</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">AbstractBeanFactory.java</td>
+<td class="MethodOfCaller">doGetBean</td>
+<td class="LineOfCaller">254</td>
+<td class="Message">Returning cached instance of singleton bean &#39;org.springframework.context.annotation.internalCommonAnnotationProcessor&#39;</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">20200224:23:41:26.780</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">DefaultSingletonBeanRegistry.java</td>
+<td class="MethodOfCaller">getSingleton</td>
+<td class="LineOfCaller">213</td>
+<td class="Message">Creating shared instance of singleton bean &#39;org.springframework.context.event.internalEventListenerProcessor&#39;</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">20200224:23:41:26.780</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">AbstractAutowireCapableBeanFactory.java</td>
+<td class="MethodOfCaller">createBean</td>
+<td class="LineOfCaller">460</td>
+<td class="Message">Creating instance of bean &#39;org.springframework.context.event.internalEventListenerProcessor&#39;</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">20200224:23:41:26.786</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">AbstractAutowireCapableBeanFactory.java</td>
+<td class="MethodOfCaller">doCreateBean</td>
+<td class="LineOfCaller">563</td>
+<td class="Message">Eagerly caching bean &#39;org.springframework.context.event.internalEventListenerProcessor&#39; to allow for resolving potential circular references</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">20200224:23:41:26.791</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">AbstractAutowireCapableBeanFactory.java</td>
+<td class="MethodOfCaller">createBean</td>
+<td class="LineOfCaller">497</td>
+<td class="Message">Finished creating instance of bean &#39;org.springframework.context.event.internalEventListenerProcessor&#39;</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">20200224:23:41:26.792</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">DefaultSingletonBeanRegistry.java</td>
+<td class="MethodOfCaller">getSingleton</td>
+<td class="LineOfCaller">213</td>
+<td class="Message">Creating shared instance of singleton bean &#39;org.springframework.context.event.internalEventListenerFactory&#39;</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">20200224:23:41:26.792</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">AbstractAutowireCapableBeanFactory.java</td>
+<td class="MethodOfCaller">createBean</td>
+<td class="LineOfCaller">460</td>
+<td class="Message">Creating instance of bean &#39;org.springframework.context.event.internalEventListenerFactory&#39;</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">20200224:23:41:26.792</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">AbstractAutowireCapableBeanFactory.java</td>
+<td class="MethodOfCaller">doCreateBean</td>
+<td class="LineOfCaller">563</td>
+<td class="Message">Eagerly caching bean &#39;org.springframework.context.event.internalEventListenerFactory&#39; to allow for resolving potential circular references</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">20200224:23:41:26.795</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">AbstractAutowireCapableBeanFactory.java</td>
+<td class="MethodOfCaller">createBean</td>
+<td class="LineOfCaller">497</td>
+<td class="Message">Finished creating instance of bean &#39;org.springframework.context.event.internalEventListenerFactory&#39;</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">20200224:23:41:26.795</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">DefaultSingletonBeanRegistry.java</td>
+<td class="MethodOfCaller">getSingleton</td>
+<td class="LineOfCaller">213</td>
+<td class="Message">Creating shared instance of singleton bean &#39;appConfig&#39;</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">20200224:23:41:26.795</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">AbstractAutowireCapableBeanFactory.java</td>
+<td class="MethodOfCaller">createBean</td>
+<td class="LineOfCaller">460</td>
+<td class="Message">Creating instance of bean &#39;appConfig&#39;</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">20200224:23:41:26.795</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">AbstractAutowireCapableBeanFactory.java</td>
+<td class="MethodOfCaller">doCreateBean</td>
+<td class="LineOfCaller">563</td>
+<td class="Message">Eagerly caching bean &#39;appConfig&#39; to allow for resolving potential circular references</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">20200224:23:41:26.796</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">AbstractAutowireCapableBeanFactory.java</td>
+<td class="MethodOfCaller">createBean</td>
+<td class="LineOfCaller">497</td>
+<td class="Message">Finished creating instance of bean &#39;appConfig&#39;</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">20200224:23:41:26.796</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">DefaultSingletonBeanRegistry.java</td>
+<td class="MethodOfCaller">getSingleton</td>
+<td class="LineOfCaller">213</td>
+<td class="Message">Creating shared instance of singleton bean &#39;a&#39;</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">20200224:23:41:26.796</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">AbstractAutowireCapableBeanFactory.java</td>
+<td class="MethodOfCaller">createBean</td>
+<td class="LineOfCaller">460</td>
+<td class="Message">Creating instance of bean &#39;a&#39;</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">20200224:23:41:26.798</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">InitDestroyAnnotationBeanPostProcessor.java</td>
+<td class="MethodOfCaller">lambda$buildLifecycleMetadata$0</td>
+<td class="LineOfCaller">213</td>
+<td class="Message">Found init method on class [com.spring.lifecycle.callbacks.A]: public void com.spring.lifecycle.callbacks.A.init()</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">20200224:23:41:26.799</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">InitDestroyAnnotationBeanPostProcessor.java</td>
+<td class="MethodOfCaller">lambda$buildLifecycleMetadata$0</td>
+<td class="LineOfCaller">219</td>
+<td class="Message">Found destroy method on class [com.spring.lifecycle.callbacks.A]: public void com.spring.lifecycle.callbacks.A.destroy2()</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">20200224:23:41:26.799</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">InitDestroyAnnotationBeanPostProcessor.java</td>
+<td class="MethodOfCaller">lambda$buildLifecycleMetadata$0</td>
+<td class="LineOfCaller">213</td>
+<td class="Message">Found init method on class [com.spring.lifecycle.callbacks.A]: public void com.spring.lifecycle.callbacks.A.init2()</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">20200224:23:41:26.799</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">InitDestroyAnnotationBeanPostProcessor.java</td>
+<td class="MethodOfCaller">checkConfigMembers</td>
+<td class="LineOfCaller">280</td>
+<td class="Message">Registered init method on class [com.spring.lifecycle.callbacks.A]: org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement@316510</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">20200224:23:41:26.799</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">InitDestroyAnnotationBeanPostProcessor.java</td>
+<td class="MethodOfCaller">checkConfigMembers</td>
+<td class="LineOfCaller">280</td>
+<td class="Message">Registered init method on class [com.spring.lifecycle.callbacks.A]: org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement@5fb3d22</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">20200224:23:41:26.799</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">InitDestroyAnnotationBeanPostProcessor.java</td>
+<td class="MethodOfCaller">checkConfigMembers</td>
+<td class="LineOfCaller">291</td>
+<td class="Message">Registered destroy method on class [com.spring.lifecycle.callbacks.A]: org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement@3da05f78</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">20200224:23:41:26.800</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">AbstractAutowireCapableBeanFactory.java</td>
+<td class="MethodOfCaller">doCreateBean</td>
+<td class="LineOfCaller">563</td>
+<td class="Message">Eagerly caching bean &#39;a&#39; to allow for resolving potential circular references</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">20200224:23:41:26.804</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">InitDestroyAnnotationBeanPostProcessor.java</td>
+<td class="MethodOfCaller">invokeInitMethods</td>
+<td class="LineOfCaller">307</td>
+<td class="Message">Invoking init method on bean &#39;a&#39;: public void com.spring.lifecycle.callbacks.A.init()</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">20200224:23:41:26.804</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">InitDestroyAnnotationBeanPostProcessor.java</td>
+<td class="MethodOfCaller">invokeInitMethods</td>
+<td class="LineOfCaller">307</td>
+<td class="Message">Invoking init method on bean &#39;a&#39;: public void com.spring.lifecycle.callbacks.A.init2()</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">20200224:23:41:26.805</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">AbstractAutowireCapableBeanFactory.java</td>
+<td class="MethodOfCaller">invokeInitMethods</td>
+<td class="LineOfCaller">1744</td>
+<td class="Message">Invoking afterPropertiesSet() on bean with name &#39;a&#39;</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">20200224:23:41:26.806</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">AbstractAutowireCapableBeanFactory.java</td>
+<td class="MethodOfCaller">createBean</td>
+<td class="LineOfCaller">497</td>
+<td class="Message">Finished creating instance of bean &#39;a&#39;</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">20200224:23:41:26.806</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">AbstractBeanFactory.java</td>
+<td class="MethodOfCaller">doGetBean</td>
+<td class="LineOfCaller">254</td>
+<td class="Message">Returning cached instance of singleton bean &#39;org.springframework.context.event.internalEventListenerFactory&#39;</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">20200224:23:41:26.830</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">AbstractApplicationContext.java</td>
+<td class="MethodOfCaller">initLifecycleProcessor</td>
+<td class="LineOfCaller">792</td>
+<td class="Message">Unable to locate LifecycleProcessor with name &#39;lifecycleProcessor&#39;: using default [org.springframework.context.support.DefaultLifecycleProcessor@6ad59d92]</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">20200224:23:41:26.830</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">AbstractBeanFactory.java</td>
+<td class="MethodOfCaller">doGetBean</td>
+<td class="LineOfCaller">254</td>
+<td class="Message">Returning cached instance of singleton bean &#39;lifecycleProcessor&#39;</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">20200224:23:41:26.832</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">PropertySourcesPropertyResolver.java</td>
+<td class="MethodOfCaller">getProperty</td>
+<td class="LineOfCaller">96</td>
+<td class="Message">Could not find key &#39;spring.liveBeansView.mbeanDomain&#39; in any property source</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">20200224:23:41:26.835</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">AbstractBeanFactory.java</td>
+<td class="MethodOfCaller">doGetBean</td>
+<td class="LineOfCaller">254</td>
+<td class="Message">Returning cached instance of singleton bean &#39;a&#39;</td>
+</tr>
+
+<tr class="info even">
+<td class="Date">20200224:23:41:26.835</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="FileOfCaller">AbstractApplicationContext.java</td>
+<td class="MethodOfCaller">doClose</td>
+<td class="LineOfCaller">993</td>
+<td class="Message">Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@41fecb8b: startup date [Mon Feb 24 23:41:26 CST 2020]; root of context hierarchy</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">20200224:23:41:26.836</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">AbstractBeanFactory.java</td>
+<td class="MethodOfCaller">doGetBean</td>
+<td class="LineOfCaller">254</td>
+<td class="Message">Returning cached instance of singleton bean &#39;lifecycleProcessor&#39;</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">20200224:23:41:26.836</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">DefaultSingletonBeanRegistry.java</td>
+<td class="MethodOfCaller">destroySingletons</td>
+<td class="LineOfCaller">493</td>
+<td class="Message">Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@27912e3: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,appConfig,a]; root of factory hierarchy</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">20200224:23:41:26.836</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">InitDestroyAnnotationBeanPostProcessor.java</td>
+<td class="MethodOfCaller">invokeDestroyMethods</td>
+<td class="LineOfCaller">322</td>
+<td class="Message">Invoking destroy method on bean &#39;a&#39;: public void com.spring.lifecycle.callbacks.A.destroy2()</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">20200224:23:41:26.836</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">DisposableBeanAdapter.java</td>
+<td class="MethodOfCaller">destroy</td>
+<td class="LineOfCaller">246</td>
+<td class="Message">Invoking destroy() on bean with name &#39;a&#39;</td>
+</tr>
